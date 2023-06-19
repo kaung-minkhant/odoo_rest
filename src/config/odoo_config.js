@@ -1,7 +1,7 @@
 const Odoo = require('odoo-xmlrpc')
 
 const local_host = 'http://localhost';
-const server_host = 'http://172.18.17.82'
+const server_host = 'https://odoo.polarserver1.cloud/'
 
 const local_odoo = new Odoo({
     url: local_host,
@@ -13,7 +13,7 @@ const local_odoo = new Odoo({
 
 const server_odoo = new Odoo({
     url: server_host,
-    port: 8069,
+    // port: 8069,
     db: `odoo`,
     username: `admin`,
     password: `admin`

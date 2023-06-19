@@ -10,7 +10,7 @@ app.use(cors(
         origin: '*'
     }
 ))
-// app.use('/odoo_rest/patients', patientRouters)
+app.use('/odoo_rest/patients', patientRouters)
 
 app.listen(PORT, () => {
     console.log(`Listening on PORT ${PORT} ....`)
